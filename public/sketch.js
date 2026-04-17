@@ -9,22 +9,8 @@ let currentSpecies = 0;
 
 function preload() {
   shellData = loadJSON('shell_species.json');
-  //clamImg = loadImage('clam.png');
 }
 
-async function fetchQuotes() {
-  try {
-    const response = await fetch('undine_quotes.json');
-    const data = await response.json();
-    quotes = data.quotes;
-    currentQuote = quotes[Math.floor(Math.random() * quotes.length)];
-    setInterval(() => {
-      currentQuote = quotes[Math.floor(Math.random() * quotes.length)];
-    }, 6000);
-  } catch (e) {
-    
-  }
-}
 
 function setup() {
   let canvas = createCanvas(200, 200);
