@@ -1,4 +1,4 @@
-let shellData = nulll
+let shellData = null
 let cols = 150;
 let rows = 150;
 let activatorGrid;
@@ -13,8 +13,7 @@ function preload() {
 
 
 function setup() {
-  let canvas = createCanvas(200, 200);
-  fetchQuotes();
+  let canvas = createCanvas(400, 400);
   textFont('Courier New');
   noStroke();
   frameRate(30)
