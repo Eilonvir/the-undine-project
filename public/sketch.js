@@ -1,41 +1,19 @@
-let shellData = null;
-let quotes = [];
-let cols = 150
-let rows = 150
+let shellData = nulll
+let cols = 150;
+let rows = 150;
 let activatorGrid;
 let futureActivatorGrid;
 let inhibitorGrid;
 let futureInhibitorGrid;
-let currentQuote = '';
 let currentSpecies = 0;
-
-//visuals
-let clamImg;
 
 function preload() {
   shellData = loadJSON('shell_species.json');
-  //clamImg = loadImage('clam.png');
-}
-
-async function fetchQuotes() {
-  try {
-    const response = await fetch('undine_quotes.json');
-    const data = await response.json();
-    quotes = data.quotes;
-    currentQuote = quotes[Math.floor(Math.random() * quotes.length)];
-    setInterval(() => {
-      currentQuote = quotes[Math.floor(Math.random() * quotes.length)];
-    }, 6000);
-  } catch (e) {
-    
-  }
 }
 
 function setup() {
-  let canvas = createCanvas(200, 200);
-  fetchQuotes();
+  createCanvas(400, 400);
   textFont('Courier New');
-  imageMode(CENTER);
   noStroke();
   frameRate(30)
   activatorGrid = [];
@@ -83,8 +61,6 @@ function draw() {
    let cellSize = width / cols;
   let from = color(240, 171, 137);
   let to = color(80, 40, 10);
-
-  //image(clamImg, width / 2, height / 2, clamImg.width * 0.5, clamImg.height * 0.5);
   
 
   let growth = shellData.species[currentSpecies].params.rho_a;
