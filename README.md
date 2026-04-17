@@ -8,8 +8,8 @@ Type anything into the input field and submit. The length of your text determine
 
 ## Species
 
-- **Lyria planicostata taiwanica** — slow, meditative spot pattern
-- **Oliva porphyria** — fast, chaotic wave pattern
+- **Lyria planicostata taiwanica** 
+- **Oliva porphyria** 
 
 Parameters sourced from: Zhu, M. (2018). *Activator-Inhibitor Model for Seashell Pattern Formation*.
 
