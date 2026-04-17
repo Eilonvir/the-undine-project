@@ -8,109 +8,18 @@
 <title>[ undine ]</title>
 <link rel="stylesheet" href="https://unpkg.com/98.css">
 
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400&display=swap');
 
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+</style>
   </head>
   <body>
-<div id="desktop">
-  <div class="window win98-window open" id="entry-window">
-    <div class="title-bar">
-      <div class="title-bar-text">Undine</div>
-      <div class="title-bar-controls">
-        <button aria-label="Close" onclick="closeWindow('entry-window')"></button>
-      </div>
-    </div>
-     
-    <div class="window-content" style="text-align:center; padding:18px;">
-      <p style="font-size:0.95rem; line-height:2.1;">"Venture not, venture not, the old man, the stream, is full of tricks!" <em>Friedrich De La Motte Fouqué</em></p>
-      <p style="font-size:0.6rem; color:#666; margin-top:10px; letter-spacing:0.12em;">DOUBLE-CLICK AN ICON TO BEGIN</p>
-    </div>
-  </div>
-      <div class="icon" style="top:170px; left:60px;" ondblclick="openWindow('shell-window')">
-    <div class="icon-img icon-folder"></div>
-    <div class="icon-label">Shells</div>
-  </div>
-
-
-  <div class="icon" style="top:340px; left:60px;" ondblclick="openWindow('note-window')">
-    <div class="icon-img icon-folder"></div>
-    <div class="icon-label">You Found  a Bottle on the Beach</div>
-  </div>
-
-      <div class="icon" style="top:510px; left:60px;" ondblclick="openWindow('about-window')">
-    <div class="icon-img icon-txt"></div>
-    <div class="icon-label">README.txt</div>
-  </div>
-  <!-- Shell Pattern - Undine-->
-   <div class="window win98-window" id="shell-window" style="top:60px; left:120px; width:380px;">
-    <div class="title-bar" onmousedown="dragStart(event,'shell-window')">
-      <div class="title-bar-text">seashell species</div>
-      <div class="title-bar-controls">
-        <button aria-label="Minimize" onclick="closeWindow('shell-window')"></button>
-        <button aria-label="Close" onclick="closeWindow('shell-window')"></button>
-      </div>
-    </div>
-    <div class="window-content">
-    <div id="shell-window-canvas"></div>
-     </div >
-  </div>
-
-
-   <!-- Text Input - Note in Bottle -->
- <div class="window win98-window" id="note-window" style="top:120px; left:170px; width:400px;">
-    <div class="title-bar" onmousedown="dragStart(event,'note-window')">
-      <div class="title-bar-text">Facts.txt — Notepad</div>
-      <div class="title-bar-controls">
-        <button aria-label="Minimize" onclick="closeWindow('note-window')"></button>
-        <button aria-label="Close" onclick="closeWindow('note-window')"></button>
-      </div>
-    </div>
-    <div class="window-content" style="font-family:'Courier New',monospace; font-size:0.72rem; white-space:pre-wrap; background:#fff;"><h3>I found a bottle on the beach</h3>
-Is someone on the other side waiting for a communication?
-
-<div class="field-row-stacked" style="width: 200px">
+    <!-- text box and button -->
+     <div class="field-row-stacked" style="width: 200px">
   <label for="text20">Send note in bottle</label>
   <textarea id="text20" rows="8"></textarea>
   <button id="add-btn">submit</button>
-  
-</div>
-</div>
-
-</div>
-
- 
-
-<div id="taskbar">
-  <button class="button" id="start-btn">&#x229E; Start</button>
-  <div id="taskbar-buttons" style="display:flex; gap:4px;"></div>
-  <div class="taskbar-time" id="clock">00:00</div>
-</div>
-
-
-  <!-- README -->
-  <div class="window win98-window" id="about-window" style="top:120px; left:170px; width:400px;">
-    <div class="title-bar" onmousedown="dragStart(event,'about-window')">
-      <div class="title-bar-text">README.txt — Notepad</div>
-      <div class="title-bar-controls">
-        <button aria-label="Minimize" onclick="closeWindow('about-window')"></button>
-        <button aria-label="Close" onclick="closeWindow('about-window')"></button>
-      </div>
-    </div>
-    <div class="window-content" style="font-family:'Courier New',monospace; font-size:0.72rem; white-space:pre-wrap; background:#fff;"> The Undine Project
-You went on a walk on the beach today
-
-You are a researcher of sorts
-
-and don't forget your body is a horror.
-
-Github:
-
-
-Author: Michaella Miller
-
-MA Computational Arts
-Goldsmiths, University of London, 2026
-</div>
-  </div>
   
 </div>
     <main>

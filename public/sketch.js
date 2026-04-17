@@ -1,7 +1,7 @@
 let shellData = null;
 let quotes = [];
-let cols = 150
-let rows = 150
+let cols = 150;
+let rows = 150;
 let activatorGrid;
 let futureActivatorGrid;
 let inhibitorGrid;
@@ -14,7 +14,7 @@ let clamImg;
 
 function preload() {
   shellData = loadJSON('shell_species.json');
-  //clamImg = loadImage('clam.png');
+  clamImg = loadImage('clam.png');
 }
 
 async function fetchQuotes() {
@@ -32,7 +32,7 @@ async function fetchQuotes() {
 }
 
 function setup() {
-  let canvas = createCanvas(200, 200);
+  createCanvas(400, 400);
   fetchQuotes();
   textFont('Courier New');
   imageMode(CENTER);
