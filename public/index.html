@@ -25,18 +25,18 @@
       <p style="font-size:0.6rem; color:#666; margin-top:10px; letter-spacing:0.12em;">DOUBLE-CLICK AN ICON TO BEGIN</p>
     </div>
   </div>
-      <div class="icon" style="top:170px; left:60px;" ondblclick="openWindow('shell-window')">
+      <div class="icon" style="top:100px; left:60px;" ondblclick="openWindow('shell-window')">
     <img src="images/shell.png" class="icon-img"> 
     <div class="icon-label">Shells</div>
   </div>
 
 
-  <div class="icon" style="top:340px; left:60px;" ondblclick="openWindow('note-window')">
-    <div class="icon-img icon-folder"></div>
+  <div class="icon" style="top:245px; left:60px;" ondblclick="openWindow('note-window')">
+    <img src="images/bottle.svg" class="icon-img"> 
     <div class="icon-label">You Found  a Bottle on the Beach</div>
   </div>
 
-      <div class="icon" style="top:510px; left:60px;" ondblclick="openWindow('about-window')">
+      <div class="icon" style="top:420px; left:60px;" ondblclick="openWindow('about-window')">
     <div class="icon-img icon-txt"></div>
     <div class="icon-label">README.txt</div>
   </div>
@@ -58,7 +58,7 @@
    <!-- Text Input - Note in Bottle -->
  <div class="window win98-window" id="note-window" style="top:120px; left:170px; width:400px;">
     <div class="title-bar" onmousedown="dragStart(event,'note-window')">
-      <div class="title-bar-text">Facts.txt — Notepad</div>
+      <div class="title-bar-text">message.txt — Notepad</div>
       <div class="title-bar-controls">
         <button aria-label="Minimize" onclick="closeWindow('note-window')"></button>
         <button aria-label="Close" onclick="closeWindow('note-window')"></button>
@@ -98,7 +98,9 @@ Is someone on the other side waiting for a communication?
     <div class="window-content" style="font-family:'Courier New',monospace; font-size:0.72rem; white-space:pre-wrap; background:#fff;"> The Undine Project
 You went on a walk on the beach today
 
-You are a researcher of sorts
+You find a few items on the shore. You sort of need to figure out how they work together
+
+Please pay attention.
 
 and don't forget your body is a horror.
 
@@ -117,7 +119,7 @@ Goldsmiths, University of London, 2026
     </main>
     <script src="https://cdn.jsdelivr.net/npm/p5@1.11.11/lib/p5.js"></script>
     <script src="app.js"></script>
-    <script src="sketch.js"></script>
+    <script src="pattern.js"></script>
   </body>
 
 </html>
