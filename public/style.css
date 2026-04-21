@@ -5,7 +5,7 @@
 body {
     cursor: auto;
     background-image: url('images/sea.jpg'), repeating-linear-gradient(0deg, transparent, transparent 2px, rgba(0,0,0,0.03) 2px, rgba(0,0,0,0.03) 4px);
-    background-size: 110%, 40%, 4px;
+    background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
     background-attachment: fixed;

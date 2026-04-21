@@ -9,8 +9,6 @@ let futureInhibitorGrid;
 let currentQuote = '';
 let currentSpecies = 0;
 
-//visuals
-let clamImg;
 
 function preload() {
   shellData = loadJSON('shell_species.json');
@@ -83,14 +81,12 @@ function draw() {
    let cellSize = width / cols;
   let from = color(240, 171, 137);
   let to = color(80, 40, 10);
-
-  //image(clamImg, width / 2, height / 2, clamImg.width * 0.5, clamImg.height * 0.5);
   
 
   let growth = shellData.species[currentSpecies].params.rho_a;
   let diffusionA = shellData.species[currentSpecies].params.Da;
   let diffusionB = currentSpecies === 0 ? shellData.species[0].params.Ds : shellData.species[1].params.Dh;
-let SourceRate = currentSpecies === 0 ? shellData.species[0].params.delta_s : shellData.species[1].params.delta_h;
+  let SourceRate = currentSpecies === 0 ? shellData.species[0].params.delta_s : shellData.species[1].params.delta_h;
   let decayRate = shellData.species[currentSpecies].params.mu_a;
   let subtractDecay = currentSpecies === 0 ? shellData.species[0].params.mu_s : shellData.species[1].params.mu_c;
   console.log(growth, diffusionA, diffusionB, decayRate, SourceRate, subtractDecay);
@@ -104,9 +100,9 @@ let SourceRate = currentSpecies === 0 ? shellData.species[0].params.delta_s : sh
     let inhibitorAverage = (inhibitorGrid[i-1][j] + inhibitorGrid[i+1][j] + inhibitorGrid[i][j-1] + inhibitorGrid[i][j+1]) / 4;
     let inhibitorDiffusion = diffusionB * (inhibitorAverage - h);
     futureActivatorGrid[i][j] = a + (growth * (a*a/h) - decayRate * a + activatorDiffusion)
-futureInhibitorGrid[i][j] = h + (growth * (a*a) - decayRate * h + inhibitorDiffusion);
-//futureActivatorGrid[i][j] = constrain(futureActivatorGrid[i][j], 0, 20);
-//futureInhibitorGrid[i][j] = constrain(futureInhibitorGrid[i][j], 0, 20);
+    futureInhibitorGrid[i][j] = h + (growth * (a*a) - decayRate * h + inhibitorDiffusion);
+    //futureActivatorGrid[i][j] = constrain(futureActivatorGrid[i][j], 0, 20);
+    //futureInhibitorGrid[i][j] = constrain(futureInhibitorGrid[i][j], 0, 20);
     }
   }
   for (let i = 0; i < cols; i++) {
