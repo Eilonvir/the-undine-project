@@ -1,7 +1,10 @@
 # Undine.03
 
-## Short Description
-A seashell pattern generator built through reaction-diffusion equations, embedded in a 98.css desktop interface as a puzzle-like interactive experience.
+## Blurb
+The interaction is via text input that returns both the simulation and a quote from De La Motte’s novella Undine (1811) – a myth about a water nymph who gains a soul by marrying a human – and the revenge that follows said human’s betrayal on her. 
+
+Embedded in a 98.css website as a mini puzzle the user needs to solve to run the generator.       
+
 
 ## Concept / Intent
 Undine.03 is the third iteration of an ongoing body of work based on Friedrich De La Motte Fouqué's 1811 novella *Undine*. The piece uses biologically sourced Gierer-Meinhardt parameters to generate emergent seashell pigmentation patterns in response to text input. Themes of phantom data, emergence, and the dialectics of nature and myth run throughout.
