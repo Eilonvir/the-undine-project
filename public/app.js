@@ -91,12 +91,20 @@ function getTopZ() {
   return max + 1;
 }
 
+function fullScreen() {
+  //Fullscreen mode display
+  if (!document.fullscreenElement) document.documentElement.requestFullscreen().catch(console.warn);
+  else document.exitFullscreen();
+}
+
+
 function updateClock() {
+  //clock updates in real time
   const now = new Date();
   const h = String(now.getHours()).padStart(2, '0');
   const m = String(now.getMinutes()).padStart(2, '0');
   document.getElementById('clock').textContent = h + ':' + m;
 }
-//clock updates in real time
+
 setInterval(updateClock, 1000);
 updateClock();

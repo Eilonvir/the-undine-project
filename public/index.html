@@ -51,12 +51,12 @@
     </div>
 
     <div class="icon" style="top:45px; left:calc(50% - 80px);" ondblclick="openWindow('about-window')">
-      <div class="icon-img icon-txt"></div>
+      <div class="icon-img icon-txt" style="width:70px; height:70px;"></div>
       <div class="icon-label">README.txt</div>
     </div>
 
     <div class="icon" style="top:510px; left:60%;" ondblclick="openWindow('book-window')">
-      <img src="images/book.svg" class="icon-img">
+      <img src="images/book.svg" class="icon-img" style="width:115px; height:115px;">
       <div class="icon-label">Book.txt</div>
     </div>
 
@@ -87,16 +87,13 @@
           <button aria-label="Close" onclick="closeWindow('note-window')"></button>
         </div>
       </div>
-      <div class="window-content"
-        style="font-family:'Courier New',monospace; font-size:0.72rem; white-space:pre-wrap; background:#fff;">
+      <div class="window-content" style="font-family:'Courier New',monospace; font-size:0.72rem; background:#fff;">
         <h3>I found a bottle on the beach</h3>
-        Is someone on the other side waiting for a communication?
-
+        <p>Is someone on the other side waiting for a communication?</p>
         <div class="field-row-stacked" style="width: 200px">
           <label for="text20">Send note in bottle</label>
           <textarea id="text20" rows="8"></textarea>
           <button id="add-btn">submit</button>
-
         </div>
       </div>
     </div>
@@ -123,7 +120,10 @@
     <div id="taskbar">
       <button class="button" id="start-btn">&#x229E; Start</button>
       <div id="taskbar-buttons" style="display:flex; gap:4px;"></div>
-      <div class="taskbar-time" id="clock">00:00</div>
+      <div style="margin-left:auto; display:flex; align-items:center; gap:4px;">
+        <button class="button" onclick="fullScreen()">&#x26F6;</button>
+        <div class="taskbar-time" id="clock">00:00</div>
+      </div>
     </div>
 
 
@@ -136,24 +136,14 @@
           <button aria-label="Close" onclick="closeWindow('about-window')"></button>
         </div>
       </div>
-      <div class="window-content"
-        style="font-family:'Courier New',monospace; font-size:0.72rem; white-space:pre-wrap; background:#fff;"> The
-        Undine Project
-        You went on a walk on the beach today
-
-        You find a few items on the shore. You sort of need to figure out how they work together
-
-        Please pay attention.
-
-        and don't forget your body is a horror.
-
-        Github:
-        https://github.com/Eilonvir/the-undine-project
-
-        Author: Michaella Miller
-
-        MA Computational Arts
-        Goldsmiths, University of London, 2026
+      <div class="window-content" style="font-family:'Courier New',monospace; font-size:0.72rem; background:#fff;">
+        <p>The Undine Project</p>
+        <p>You went on a walk on the beach today</p>
+        <p>You find a few items on the shore. You sort of need to figure out how they work together</p>
+        <p>Please pay attention.</p>
+        <p>and don't forget your body is a horror.</p>
+        <p>Github:<br>https://github.com/Eilonvir/the-undine-project</p>
+        <p>Author: Michaella Miller<br>MA Computational Arts<br>Goldsmiths, University of London, 2026</p>
       </div>
     </div>
 
