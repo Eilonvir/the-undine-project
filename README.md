@@ -6,7 +6,7 @@ The interaction is via text input that returns both the simulation and a quote f
 Embedded in a 98.css website as a mini puzzle the user needs to solve to run the generator.       
 
 
-## Concept / Intent
+## Concept
 Undine.03 is the third iteration of an ongoing body of work based on Friedrich De La Motte Fouqué's 1811 novella *Undine*. The piece uses biologically sourced Gierer-Meinhardt parameters to generate emergent seashell pigmentation patterns in response to text input. Themes of phantom data, emergence, and the dialectics of nature and myth run throughout.
 
 ## Technology Used
@@ -24,11 +24,12 @@ node server.js
 Then open `http://localhost:3000` in your browser.
 
 ## Requirements
+- Fit to run on a computer, wasn't designed for a phone interface
 - Node.js
 - A modern browser 
 
 ## Video documentation
-to follow
+https://youtu.be/UQxDGBo61eo
 
 ## Credits / Acknowledgements
 Supervisor - Professor Millicent Gunn
