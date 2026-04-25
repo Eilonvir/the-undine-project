@@ -33,6 +33,7 @@ https://youtu.be/UQxDGBo61eo
 
 ## Credits / Acknowledgements
 Supervisor - Professor Millicent Gunn
+
 TAs - Marcus Round, Huichuan Wang
 
 AI acknowledgement
