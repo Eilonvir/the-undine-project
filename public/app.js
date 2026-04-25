@@ -67,7 +67,6 @@ document.getElementById('add-btn').addEventListener('click', function () {
   newLine.textContent = text;
   content.insertBefore(newLine, content.querySelector('.field-row-stacked'));
   textarea.value = '';
-  openWindow('book-window');
   document.getElementById('quote-display').textContent = currentQuote;
   const confirmation = document.createElement('div');
 confirmation.textContent = '— transmission received —';

@@ -49,7 +49,7 @@ async function fetchQuotes() {
 }
 
 function setup() {
-  let canvas = createCanvas(200, 200);
+  createCanvas(200, 200);
   fetchQuotes();
   textFont('Courier New');
   noStroke();

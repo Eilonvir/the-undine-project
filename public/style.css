@@ -32,10 +32,7 @@ body {
   .boot-line:nth-child(2) { animation-delay: 0.6s; }
   .boot-line:nth-child(3) { animation-delay: 1.0s; }
   .boot-line:nth-child(4) { animation-delay: 1.4s; }
-  .boot-line:nth-child(5) { animation-delay: 1.8s; }
-  .boot-line:nth-child(6) { animation-delay: 2.2s; }
-  .boot-line:nth-child(7) { animation-delay: 2.6s; }
-  .boot-line:nth-child(8) { animation-delay: 3.0s; color: #fff; }
+  .boot-line:nth-child(5) { animation-delay: 1.8s; color: #fff; }
 
   @keyframes bootappear { to { opacity: 1; } }
 
@@ -61,8 +58,8 @@ body {
   .icon:hover .icon-label { background: #7b54d7; color: #fff; }
 
   .icon-img {
-    width: 90px;
-    height: 90px;
+    width: 70px;
+    height: 70px;
     margin-bottom: 4px;
     image-rendering: pixelated;
   }
@@ -122,10 +119,6 @@ body {
 
 
 
-html, body {
-  margin: 0;
-  padding: 0;
-}
 canvas {
   display: block;
 }
